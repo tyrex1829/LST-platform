@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.get("/", (req: Request, res: Response): any => {
+app.get("/hey", (req: Request, res: Response): any => {
   return res.status(200).json({
     success: true,
     data: "",
